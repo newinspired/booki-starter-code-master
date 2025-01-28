@@ -58,12 +58,75 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header ***********/
 
-header {
-    padding :30px 50px;
-    font-size : 5px;
-    width : 10px;
+.header { 
+    padding : 0 0 50px 0px;
+    display : flex;
+    align-items : center;
 }
+
+.liens {
+    display : flex;
+    font-size : 20px;
+    padding : 0 0 0 950px;
+    gap: 70px;
+}
+
+.hébergements:hover {
+    color : blue;
+}
+
+.activités:hover {
+    color : blue;       
+}
+
+/****** Vacances de rêve ***********/
+
+.information {
+    display : flex;
+    align-items : center;
+    gap : 0px;
+    padding : 50px 0 0 0;
+}
+
+.logo-information {
+    height : auto;
+    width : 35px;
+}
+
+.search-bar{
+    display : flex;
+    align-items: center;
+}
+
+.logo-localisation {
+    width : 14px;
+    height : 18px;
+    top :15px;
+    left : 18px;
+    background-color : #F2F2F2 ;
+    padding : 18px;
+    border-radius: 50% 0 0 50%;
+}
+
+.h3 {
+    font-style: bold;
+    font : raleway ;
+    size : 150px;
+    font-size : 18px;
+}
+
+.filters {
+    display : flex;
+    align-items: center;    
+}
+
+.img-logo { 
+    width : 22px;
+    height : 22px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -75,6 +138,13 @@ header {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.h4{
+    font-size : 22px;
+    font-style : bold;
+    font : raleway;
+
 }
 
 /****** Hebergements ***********/
@@ -127,22 +197,17 @@ header {
     margin-bottom: 5px;
 }
 
-img {
-    width : 100px;
-}
 
-h1 { 
-    padding : 50px 0 0 50px;
-    font-weight: bold;
-    font-family: Arial;
-    font-size : 20px;
-}
 
-p {
-    font-family : arial;
-    padding: 0 50px;
-    font-size : 20px;
-}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -15,29 +15,72 @@
 </head>
 
 <body>
-    <header> 
-        <img src="../booki/images/logo/Booki.png" alt="logo booki"> 
-    </header>
-
-    <section> 
-        <h1>
-            Trouvez votre hébergement pour des vacances de rêve !
-        </h1>
-        <p> 
-            En plein centre-ville ou pleine nature !
-        </p>
-    </section>
 
     <div class="main-container">
-        <header></header>
+        <header class="header">
+            <img src="images/logo/Booki.png" alt="logo booki"> 
+            <nav class="liens"> 
+                <a class="hébergements" href="Liens/Hébergements.html"> Hébergements </a>
+                <a class="activités" href="Liens/Activités.html"> Activités </a>
+            </nav>
+        </header>
+
         <main>
+            <section class="Vacances-de-rêve"> 
+                <h2>
+                    Trouvez votre hébergement pour des vacances de rêve ! 
+                </h2>
+                <p> 
+                    En plein centre-ville ou pleine nature !
+                </p>
+                <div class="search-bar"> 
+                    <img src="images/autres-logo/localisation.png" alt="Logo localisation" class="logo-localisation";>
+                    <form  action="/recherche" method="get" class="search-form"> 
+                        
+                    </form>
+                </div>
+
+                <div class="filters">
+                    <div> 
+                        <h3> 
+                            Filtres 
+                        </h3>
+                    </div>
+                        
+                    <div class="item"> 
+                        <img src="images/autres-logo/image1.png" alt="logo de billet" class="img-logo">
+                        <p>Economie</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/autres-logo/image2.png" alt="logo petit bonhomme" class = "img-logo">
+                        <p>Familial</p>
+                    </div>
+                    <div> 
+                        <img src="images/autres-logo/image3.png" alt="logo de coeur" class="img-logo">
+                        <p>Romantique</p>
+                    </div>
+                    <div> 
+                        <img src="images/autres-logo/image4.png" alt="une petite flamme" class="img-logo">
+                        <p>Nos pépites</p>
+                    </div>
+                </div>
+
+                <div class="information"> 
+                    <img src="images/autres-logo/information.png" alt="logo information" class="logo-information">
+                    <p> 
+                            Plus de 500 logements sont disponibles dans cette ville !
+                    </p>
+                </div>
+            </section>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h4 class="section-title">Hébergements à Marseille</h4>
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <h4 class="section-title">Les plus populaires</h4>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
