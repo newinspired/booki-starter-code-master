@@ -17,11 +17,11 @@
 <body>
 
     <div class="main-container">
-        <header class="header">
-            <img class="logo-booki" src="images/logo/Booki.png" alt="logo booki"> 
-            <nav class="liens"> 
-                <a class="hebergements" target="_blank" href="Liens/Hebergements.html"> Hébergements </a>
-                <a class="activites" target="_blank" href="Liens/Activites.html"> Activités </a>
+        <header>
+            <img src="images/logo/Booki.png" alt="logo booki"> 
+            <nav> 
+                <a target="_blank" href="Liens/Hebergements.html">Hébergements</a>
+                <a target="_blank" href="Liens/Activites.html">Activités</a>
             </nav>
         </header>
 
@@ -40,18 +40,13 @@
                         <img src="images/autres-logo/localisation.png" alt="Logo localisation" class="logo-localisation" >
                     </div>
                     <input type="text" class="text-search-bar" value="Marseille, France"/>  
-                    <div class="back-ground-boutton"> 
-                        <boutton type="button" class="Boutton" >Rechercher</boutton>
-                    </div>                   
+                    <button type="button" class="back-ground-boutton" >Rechercher</button>
                 </div>
 
                 <div class="filters">
-                    <div> 
-                        <h3> 
-                            Filtres 
-                        </h3>
-                    </div>
-                        
+                    <h3> 
+                        Filtres 
+                    </h3>
                     <div class="item"> 
                         <img src="images/autres-logo/image1.png" alt="logo de billet" class="img-logo">
                         <p>Economie</p>
@@ -292,34 +287,74 @@
                 </section>
 
             </div>
+            
+        
+            <section class="activites">
+                <div class="populaires-title">
+                    <h4 class="section-title-activites">Activités à Marseille</h4>
+                </div>
 
-
-
+                <div class="activites-card">
+                    <a href="#">
+                        <article class="activites-card-content">
+                            <img src="images/activites/reno-laithienne.jpg">
+                            <div class="card-txt-activites"> 
+                                <h4> Vieux-Port</h4>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="activites-card-content">
+                            <img src="images/activites/paul-hermann.jpg">
+                            <div class="card-txt-activites"> 
+                                <h4> Fort de Pomègues</h4>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="activites-card-content">
+                            <img src="images/activites/kilyan-sockalingum.jpg">
+                            <div class="card-txt-activites"> 
+                                <h4>Parc national des Calanques</h4>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="activites-card-content">
+                            <img src="images/activites/reno-laithienne.jpg">
+                            <div class="card-txt-activites"> 
+                                <h4>Notre-dame-de-la-garde</h4>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
 
             
         </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-item"> <h3>A propos</h3></div>
+                    <div > <p>Fonctionnement du site </p></div>
+                    <div > <p>Conditions générales</p></div>
+                    <div > <p>Données et confidentialités</p></div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-item"> <h3>Nos hébergements</h3> </div>
+                    <div> <p>Charte qualité</p></div>
+                    <div> <p>Prposer votre hotel</p></div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-item"><h3>Assistance</h3></div>
+                    <div> <p>Centre d'aide</p></div>
+                    <div> <p>Nous contacter</p></div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <div class="footer-item"> <h3>A propos</h3></div>
-                <div > <p>Fonctionnement du site </p></div>
-                <div > <p>Conditions générales</p></div>
-                <div > <p>Données et confidentialités</p></div>
-            </div>
-            <div class="footer-column">
-                <div class="footer-item"> <h3>Nos hébergements</h3> </div>
-                <div> <p>Charte qualité</p></div>
-                <div> <p>Prposer votre hotel</p></div>
-            </div>
-            <div class="footer-column">
-                <div class="footer-item"><h3>Assistance</h3></div>
-                <div> <p>Centre d'aide</p></div>
-                <div> <p>Nous contacter</p></div>
-            </div>
-        </div>
-    </footer>
+
 </body>
 
 </html>

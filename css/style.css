@@ -17,13 +17,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px;
+    margin: 0;
+    align-items: center;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 50px 50px;
     box-sizing: border-box;
 }
 
@@ -37,10 +37,25 @@ a {
     font-size: 22px;
 }
 
+.section-title-activites {
+    margin: 0;
+    font-size: 22px;
+    padding-left : 30px;
+    padding-top : 60px;
+    padding-bottom: 30px;
+}
+
+
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activites-card-content{
+    background-color: white;
+    border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -73,40 +88,32 @@ button:focus, a:focus {
 
 /****** Header ***********/
 
-.header { 
-    padding : 0 0 50px 0px;
+header { 
     display : flex;
     align-items : center;
+    height: 80px;
+    justify-content: space-between;
 }
 
-.liens {
+header nav {
     display : flex;
     font-size : 20px;
-    padding : 0 0 0 950px;
     gap: 70px;
-    padding-top:30px;
+    height: 100%;
 }
 
-.hebergements:hover {
+header nav a {
+  padding-top: 20px;
+}
+
+header nav a:hover {
     color : blue;
-    border-top-style: solid; 
-    border-top-width: 2px; 
-    border-top-color: blue;
-    padding-top : 20px;
+    border-top : 2px solid blue; 
 }
 
-.activites:hover {
-    color : blue;
-    border-top-style: solid; 
-    border-top-width: 2px; 
-    border-top-color: blue;
-    padding-top : 20px;
-}
-
-.logo-booki{
+header img{
     width : 61px;
     height : 19px;
-    padding-top :20px;
 }
 
 /****** Vacances de rêve ***********/
@@ -133,12 +140,8 @@ button:focus, a:focus {
 }
 
 .text-search-bar{
-    box-sizing: border-box;
-    box-sizing : 1px;
-    border-color : #F2F2F2 ;
     width : 200px;
     height: 49px;
-    height : fixed;
     text-align: center ;
     font-weight : bold;
     font-size : 18px;
@@ -234,6 +237,7 @@ button:focus, a:focus {
 .hebergements-marseille{
     gap :0px;
     width: 65%;
+    min-width :940px; 
 }
 
 .description-image{
@@ -251,12 +255,17 @@ button:focus, a:focus {
     display: grid;
     gap: 20px;
     justify-items : start;
+    max-width : 100%;
+}
+
+.container-hebergements .hebergement-cards{
+    max-width :100%;
 }
 .hebergement-cards{
     background-color: #FFFFFF;
     border-radius : 20px;
-    width : 250px;
-    height : 207px;
+    max-width : 100%;
+    height : auto;
     padding :5px;
     margin-left : 0px;
 }
@@ -337,10 +346,37 @@ button:focus, a:focus {
     margin-bottom: 5px;
 }
 
+/**************Activités ****************/
+
+.card-txt-activites{
+    display : flex;
+    align-items: center;
+    padding-left : 20px;
+}
+.activites {
+    padding-bottom : 50px;
+}
+.activites-card {
+    display: flex;
+    padding-left : 30px;
+}
+
+.activites-card-content img{
+    border-radius : 20px 20px 0px 0px;
+    margin : 0px;
+    width: 298px;
+    height: 380px;
+    justify-content: space-between;
+}
+
+.activites-card-content{
+    margin : 15px;
+}
+
 /**************Footer ****************/
 
 footer {
-    width: 100%;
+    min-width: 100%;
     background-color: #F2F2F2;
 }
 
@@ -378,13 +414,13 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
-        width: 100%;
+    .hebergements-marseille {
+        max-width: 100%;
     }
 
     .populaires {
@@ -409,6 +445,14 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites-card-content img{
+        border-radius : 20px 20px 0px 0px;
+        margin : 0px;
+        width: 193px;
+        height: 200px;
+        justify-content: space-between;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) 
