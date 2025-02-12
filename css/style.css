@@ -34,6 +34,8 @@ a {
 
 .section-title {
     margin: 0;
+    padding-top : 10px;
+    padding-left: 20px;
     font-size: 22px;
 }
 
@@ -71,10 +73,24 @@ a {
     font-weight: 700;
 }
 
+.h3 {
+    font-style: bold;
+    font : raleway ;
+    size : 150px;
+    font-size : 18px;
+}
+
 .h4{
     font-size : 22px;
     font-style : bold;
     font : raleway;
+}
+
+h5{
+    font-size :18px;
+    font-weight: bold;
+    font-family :raleway;
+    margin-top: 8px;
 }
 
 .neutral-star {
@@ -176,7 +192,14 @@ header img{
     width : 100px;
     height : 21px;
     font-weight: bold ;
+    
 }
+/*
+.logo-rechercher-responsive{
+    width: 17px;
+    height: 17px;
+}
+*/
 
 .back-ground-boutton{
     padding : 15px 16px;
@@ -186,12 +209,7 @@ header img{
     color : white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-}
-.h3 {
-    font-style: bold;
-    font : raleway ;
-    size : 150px;
-    font-size : 18px;
+    border : none;
 }
 
 .filters {
@@ -199,8 +217,14 @@ header img{
     align-items: center;   
     gap : 15px;
     padding : 25px 0px
-
 }
+
+.container-items{
+    display :flex;
+    align-items :center;
+    gap : 15px;
+}
+
 
 .img-logo { 
     width : 22px;
@@ -211,6 +235,7 @@ header img{
     padding-left : 10px;
 }
 
+
 .filters .item { 
     gap : 10px;
     display : flex;
@@ -219,8 +244,12 @@ header img{
     border-radius : 25px;
     padding: 4px 19px 4px 19px;
     height : 30px;
+    background-color : transparent;
 }
 
+.filters .item:hover{
+    background-color : #DEEBFF;
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -231,15 +260,20 @@ header img{
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 20px;
+    padding-left : 20px;
+    padding-top : 20px;
+    padding-right : 20px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
-.hebergements-marseille{
+.hebergements-marseille {
     width: 65%; 
 }
 
+.hebergements-marseille .section-title{
+    padding-bottom : 12px;
+}
 .description-image{
     padding-left : 10px;
 }
@@ -282,10 +316,6 @@ header img{
     border-top-right-radius: 20px;
 }
 
-.section-title {
-    padding-bottom : 30px;
-}
-
 .hotel-du-port{
     margin : 0px;
 }
@@ -308,8 +338,8 @@ header img{
 
 .populaires-title {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items :baseline;
 }
 
 .populaires-cards .card {
@@ -356,9 +386,13 @@ header img{
 .activites {
     padding-bottom : 50px;
 }
+
+.activites .populaires-title{
+    padding-bottom : 25px;
+}
+
 .activites-card {
     display: flex;
-    padding-left : 30px;
 }
 
 .activites-card-content img{
@@ -400,23 +434,6 @@ footer {
 
 
 
-
-/*  Desktop  */
-@media screen and (max-width : 1440pxs){
-    
-header {
-    margin : 0px 60px;
-}
-
-.vacances-de-reve {
-    margin : 0px 60px;
-}
-}
-
-
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -448,6 +465,7 @@ header {
     display : flex;
     flex-direction: column;
     width : 90%;
+    padding-bottom : 30px;
 }
 
 .populaires .populaires-title{
@@ -504,13 +522,65 @@ footer{
     /* ... */
 
 @media screen and (max-width: 767.98px) {
-    
+header{
+    display:flex; 
+    flex-direction: column;
+    align-items :center;
+    padding-bottom : 80px;
+}
+header img{
+    padding-top : 45px;
+    padding-bottom : 30px;
+}
+
+header nav{
+    display :flex;
+    justify-content :space-around;
+}
+header nav a {
+    padding-bottom: 20px;
+    border-bottom : 2px solid #F2F2F2;
+    border-width : 200%;
+}
+
+header nav a:hover {
+    color : #0065FC;
+    border-top : none;
+    border-bottom : 2px solid #0065FC; 
+}
+
+.search-bar{
+    display : flex;
+    justify-content : space-between;
+}
+
+.text-search-bar{
+    border-bottom : 2px solid #F2F2F2;
+    border-top : 2px solid #F2F2F2;
+    width : 80%;
+    height: 44px;
+}
+
+.back-ground-localisation{
+    min-width : 45px;
+}
+
 .activites-card-content{
     width : 100%;
 }
 
-.item{ 
-    width : 20%;
+.container-hebergements{
+    display : flex;
+    flex-direction : column;
+    
 }
+
+.item{
+    width :50%;
+}
+
+.hebergement-cards img{
+    width : 100%;
+}   
 }
 
