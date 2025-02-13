@@ -392,19 +392,22 @@ header img{
 }
 
 .activites-card {
-    display: flex;
+    display : flex;
+    gap :30px;
+    align-items: center;
 }
 
 .activites-card-content img{
-    border-radius : 20px 20px 0px 0px;
+    border-radius : 20px 0px 0px 0px;
     margin : 0px;
-    width: 298px;
+    width: 300px;
     height: 380px;
     justify-content: space-between;
 }
 
 .activites-card-content{
-    margin : 15px;
+    width : 100%;
+    margin-bottom : 20px;
 }
 
 /**************Footer ****************/
@@ -412,6 +415,11 @@ header img{
 footer {
     width: 100%;
     background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap : 40px;
 }
 
 .footer-container {
@@ -512,7 +520,8 @@ header {
     padding-left : 50px;
 }
 footer{
-    margin :0px 60px;
+    display : flex;
+    align-items :center;
 }
 
 }
@@ -565,22 +574,90 @@ header nav a:hover {
     min-width : 45px;
 }
 
-.activites-card-content{
+.filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.hebergements-and-populaires{
+    flex-direction : column-reverse;
+}
+.populaires{
     width : 100%;
+    border-radius : 0 !important;
+    margin-bottom : 25px;
+    background-color: var(--main-bg-color) !important;
+}
+
+.hebergements-marseille{
+    width :100%;
+    background-color: white !important;
+}
+
+.hebergements-marseille {
+    background-color: transparent !important;
+}
+
+.filters{
+    display : flex;
+    flex-direction : column;
+    gap : 10px;
+}
+.container-items{
+    flex-wrap: wrap;
+}
+.item {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.activites-card{
+    flex-wrap: wrap;
+    width : 90%;
+}
+.activites h4{
+    padding-bottom : 50px;
+}
+.activites-card-content{
+    width :100%;
+}
+
+.activites-card-content img{
+    width: 100%;
 }
 
 .container-hebergements{
     display : flex;
-    flex-direction : column;
-    
-}
-
-.item{
-    width :50%;
+    flex-direction : column;   
 }
 
 .hebergement-cards img{
     width : 100%;
 }   
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.populaires-cards a {
+    width: 100%;
+}
+
+.footer{
+    width : 100%;
+    margin: 0px;
+}
+
 }
 
