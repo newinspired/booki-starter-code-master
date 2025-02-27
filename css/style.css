@@ -23,6 +23,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .main-container {
@@ -50,7 +52,9 @@ a {
     padding-top : 60px;
 }
 
-
+.card-hebergement{
+    filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.1));
+}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -126,7 +130,8 @@ header nav a {
 
 header nav a:hover {
     color : #0065FC;
-    border-top : 2px solid #0065FC; 
+    border-top : 2px solid #0065FC;
+    cursor: default;
 }
 
 header img{
@@ -154,7 +159,6 @@ header img{
 
 .search-bar{
     display : flex;
-    align-items: center;
 }
 
 .text-search-bar{
@@ -238,6 +242,7 @@ header img{
 
 .filters .item:hover{
     background-color : #DEEBFF;
+    cursor: default;
 }
 
 
@@ -249,7 +254,8 @@ header img{
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding : 20px;
+    padding :20px;
+    margin-top :30px;
     box-sizing: border-box;
 }
 
@@ -496,6 +502,7 @@ header {
     /* ... */
 
 @media screen and (max-width: 767.98px) {
+
 header{
     display:flex; 
     flex-direction: column;
@@ -527,9 +534,13 @@ header nav a:hover {
     border-bottom : 2px solid #0065FC; 
 }
 
+.vacances-de-rêve {
+    margin: 0 5%;
+}
 .search-bar{
-    display : flex;
-    justify-content : space-between;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .location-logo {
@@ -573,15 +584,6 @@ header nav a:hover {
     min-width : 45px;
 }
 
-.filters {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
-}
-
 .hebergements-and-populaires{
     flex-direction : column-reverse;
 }
@@ -606,18 +608,19 @@ header nav a:hover {
 
 .filters{
     display : flex;
-    flex-direction : column;
-    gap : 10px;
+    gap : 2%;
+    justify-content: flex-start;
 }
 .container-items{
     flex-wrap: wrap;
+    width : 100%;
+    gap : 7px;
+    justify-content : space-between
 }
-.item {
-    width: 35%;
-    display: flex;
+
+.filters .item {
+    width: 31%;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 
 .section-title-activites{
