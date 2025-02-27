@@ -620,6 +620,9 @@ header nav a:hover {
     padding: 10px;
 }
 
+.section-title-activites{
+    padding-top : 0px;
+}
 .activites-card{
     flex-direction: column;
 }
